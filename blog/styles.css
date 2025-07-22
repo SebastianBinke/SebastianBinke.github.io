@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 2rem auto;
+  line-height: 1.6;
+}
+
+.post {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Letzten Eintrag ohne Linie */
+.post:last-child {
+  border-bottom: none;
+}
+
+/* Bilder responsiv */
+.post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}

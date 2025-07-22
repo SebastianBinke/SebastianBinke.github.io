@@ -1,20 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>streaming schedule </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontpage</title>
+  <style>
+    /* Windows XP style button */
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #fdf5e6; /* Off-white, slightly yellowish paper */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .xp-buttons {
+      display: flex;
+      z-index: 1;
+    }
+    .xp-button {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0 8px;
+      text-decoration: none;
+      color: #000;
+      background: linear-gradient(to bottom, #fff, #d9d9d9);
+      border: 2px inset #f0f0f0;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+      border-radius: 3px;
+      box-shadow: 1px 1px 0 #fff inset, -1px -1px 0 #000 inset;
+      cursor: pointer;
+    }
+    .xp-button:active {
+      border: 2px outset #d9d9d9;
+      box-shadow: none;
+    }
+    /* Container for neko.js cat */
+    #oneko-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px; /* adjust according to cat size */
+      pointer-events: none;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-	<h3>notes:</h3>
-	<p>My streaming schedule might vary a lot, especially in the beginning since I need to get used to it.</p> 
-	<p>Nevertheless, you can always check this website, as I'll keep it updated for you all and provide all the upcoming streaming dates and times.</p>
-	<p>I might also add more stuff to this website in the future.</p>
-	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRtrrYGhZIxm5UmXeJGP92NqJKzsFwHWPD4eFH44Eg3G1W0u38IA3UBhFtfqjTTSnLDJrdn6W0uckz-/pubhtml?widget=true&amp;headers=false" width="1150" height="620"></iframe>
-	<p>Thank you so much for checking in!</p>
-	<a href="https://www.youtube.com/@sebastianbinke/streams">My YouTube</a>
-	<p>
-		
-	</p>
-	<a href="https://www.instagram.com/gtfobasti">My Instagram</a>
+  <div class="xp-buttons">
+    <a href="https://www.youtube.com/@SebastianBinke" class="xp-button" target="_blank" rel="noopener">YouTube</a>
+    <a href="blog/index.html" class="xp-button" target="_blank" rel="noopener">Blog</a>
+    <a href="streamschedule/index.html" class="xp-button" target="_blank" rel="noopener">Schedule</a>
+    <a href="https://www.instagram.com/SebastianBinke" class="xp-button" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://github.com/SebastianBinke" class="xp-button" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/SebastianBinke" class="xp-button" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <!-- Include oneeko's script to spawn a single cat running left-to-right -->
+  <script src="oneko.js"></script>
+  <script>
+    // Start the cat running automatically
+    oneko();
+    onekoRun();
+  </script>
 </body>
 </html>
